@@ -7,7 +7,7 @@
       "es", 
       "en");
    $nombres_idiomas = array (
-      "es" => "Español", 
+      "es" => "EspaÃ±ol", 
       "en" => "English");
    
 ?>

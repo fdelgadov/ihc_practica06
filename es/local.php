@@ -1,6 +1,6 @@
 <?PHP
 // -----------------------------------------------------------------
-// Localización: español
+// Localizaciï¿½n: espaï¿½ol
 // -----------------------------------------------------------------
 
 // -----------------------------------------------------------------
@@ -9,15 +9,15 @@
    $textos = array (
       "tit_home"        => "Inmobiliaria Lindavista",
       "content"         => "Sitio web de la Inmobiliaria Lindavista",
-      "menu_inf"        => "Información",
+      "menu_inf"        => "InformaciÃ³n",
       "menu_pro"        => "Promociones",
       "menu_ser"        => "Servicios", 
       "menu_not"        => "Noticias", 
       "menu_con"        => "Contacto",
       "noticias"        => "Noticias",
       "lema"            => "Inmobiliaria Lindavista. Construimos un mundo mejor para usted",
-      "logo_html"       => "HTML Válido",
-      "logo_css"        => "CSS Válida",
+      "logo_html"       => "HTML VÃ¡lido",
+      "logo_css"        => "CSS VÃ¡lida",
       "logo_wai"        => "Icono de conformidad con el Nivel Triple-A, de las " .
                            "Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI"
    );
@@ -27,9 +27,9 @@
 // -----------------------------------------------------------------
 function date2string ($date)
 {
-   // Formato: día del mes (número, sin ceros) /
-   //          mes del año (número, sin ceros) /
-   //          año (cuatro dígitos)
+   // Formato: dï¿½a del mes (nï¿½mero, sin ceros) /
+   //          mes del aï¿½o (nï¿½mero, sin ceros) /
+   //          aï¿½o (cuatro dï¿½gitos)
    // Ejemplo: 15/1/2007
    $string = date ("j/n/Y", strtotime($date));
    return ($string);
