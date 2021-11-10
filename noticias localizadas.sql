@@ -3,9 +3,9 @@
 # http://www.phpmyadmin.net/ (download page)
 #
 # servidor: localhost
-# Tiempo de generaci髇: 15-01-2007 a las 15:53:55
-# Versi髇 del servidor: 4.00.18
-# Versi髇 de PHP: 4.3.5
+# Tiempo de generaci锟絥: 15-01-2007 a las 15:53:55
+# Versi锟絥 del servidor: 4.00.18
+# Versi锟絥 de PHP: 4.3.5
 # Base de datos : `lindavista`
 # --------------------------------------------------------
 
@@ -21,7 +21,7 @@ CREATE TABLE noticias_en (
   fecha date NOT NULL default '0000-00-00',
   imagen varchar(100) default NULL,
   PRIMARY KEY  (id)
-) TYPE=MyISAM COMMENT='Noticias de la inmobiliaria Lindavista';
+) ENGINE=MyISAM COMMENT='Noticias de la inmobiliaria Lindavista';
 
 #
 # Volcar la base de datos para la tabla `noticias_en`
@@ -43,12 +43,12 @@ CREATE TABLE noticias_es (
   fecha date NOT NULL default '0000-00-00',
   imagen varchar(100) default NULL,
   PRIMARY KEY  (id)
-) TYPE=MyISAM COMMENT='Noticias de la inmobiliaria Lindavista';
+) ENGINE=MyISAM COMMENT='Noticias de la inmobiliaria Lindavista';
 
 #
 # Volcar la base de datos para la tabla `noticias_es`
 #
 
-INSERT INTO noticias_es VALUES (1, 'Nueva promoci髇 en la costa', 'Ya est醤 a la venta los apartamentos de la nueva promoci髇 <SPAN CLASS="importante">Villa Romana</SPAN>. Situada en primera l韓ea de playa, esta moderna urbanizaci髇 cuenta con todas las comodidades y unas calidades de lujo. Una oportunidad 鷑ica de disfrutar de un apartamento en la mejor playa de la costa.', 'costas', '2007-01-16', 'villa_romana.jpg');
-INSERT INTO noticias_es VALUES (2, 'Finalizada la promoci髇 "Nueva Atalaya"', 'Ya se han entregado las llaves a los propietarios de las magn韋icas viviendas de la promoci髇 <SPAN CLASS="importante">Nueva Atalaya</SPAN>. En breve comenzar醤 las obras de la fase II, para la cual existe una gran expectaci髇.', 'promociones', '2007-01-09', 'nueva_atalaya.jpg');
+INSERT INTO noticias_es VALUES (1, 'Nueva promoci贸n en la costa', 'Ya est谩n a la venta los apartamentos de la nueva promoci贸n <SPAN CLASS="importante">Villa Romana</SPAN>. Situada en primera l铆nea de playa, esta moderna urbanizaci贸n cuenta con todas las comodidades y unas calidades de lujo. Una oportunidad 煤nica de disfrutar de un apartamento en la mejor playa de la costa.', 'costas', '2007-01-16', 'villa_romana.jpg');
+INSERT INTO noticias_es VALUES (2, 'Finalizada la promoci贸n "Nueva Atalaya"', 'Ya se han entregado las llaves a los propietarios de las magn铆ficas viviendas de la promoci贸n <SPAN CLASS="importante">Nueva Atalaya</SPAN>. En breve comenzar贸n las obras de la fase II, para la cual existe una gran expectaci贸n.', 'promociones', '2007-01-09', 'nueva_atalaya.jpg');
 
