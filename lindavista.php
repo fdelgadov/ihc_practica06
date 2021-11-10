@@ -2,10 +2,10 @@
    "http://www.w3.org/TR/html4/strict.dtd">
 
 <?PHP
-// Incluir fichero con la información de los idiomas
+// Incluir fichero con la informaciï¿½n de los idiomas
    require ("local.php");
 
-// Establecer lenguaje. Por defecto se toma el español
+// Establecer lenguaje. Por defecto se toma el espaï¿½ol
    $lang = $_REQUEST["lang"];
    if (!isset($lang) || !in_array($lang, $idiomas))
       $lang = 'es';
@@ -15,7 +15,7 @@
 
    print ("<HTML LANG='$lang'>\n");
 
-// Cabecera de la página
+// Cabecera de la pï¿½gina
    $t_tit_home = $textos['tit_home'];
    $t_content = $textos['content'];
 
@@ -81,25 +81,25 @@
    print ("   <H1>$t_noticias</H1>\n");
 
 // Conectar con el servidor de base de datos
-   $conexion = mysql_connect ("localhost", "cursophp", "")
+   $conexion = mysqli_connect ("localhost", "root", "")
       or die ("No se puede conectar con el servidor");
 
 // Seleccionar base de datos
-   mysql_select_db ("lindavista")
+   mysqli_select_db ($conexion, "lindavista")
       or die ("No se puede seleccionar la base de datos");
 
 // Enviar consulta
    $instruccion = "select * from noticias_$lang order by fecha desc";
-   $consulta = mysql_query ($instruccion, $conexion)
+   $consulta = mysqli_query ($conexion, $instruccion)
        or die ("Fallo en la consulta");
 
 // Mostrar resultados de la consulta
-   $nfilas = mysql_num_rows ($consulta);
+   $nfilas = mysqli_num_rows ($consulta);
    if ($nfilas > 0)
    {
       for ($i=0; $i<$nfilas; $i++)
       {
-         $resultado = mysql_fetch_array ($consulta);
+         $resultado = mysqli_fetch_array ($consulta);
          print ("   <DIV CLASS='noticia'>\n");
          print ("      <H2><SPAN CLASS='fecha'>" . date2string($resultado['fecha']) .
                           "</SPAN> - " . $resultado['titulo'] . "</H2>\n");
@@ -111,8 +111,8 @@
       }
    }
 
-// Cerrar conexión
-   mysql_close ($conexion);
+// Cerrar conexiï¿½n
+   mysqli_close ($conexion);
 ?>
 
 </DIV>
