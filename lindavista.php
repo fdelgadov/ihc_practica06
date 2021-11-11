@@ -6,12 +6,9 @@
    require ("local.php");
 
 // Establecer lenguaje. Por defecto se toma el espa�ol
-   $lang;
-   if (!isset($lang) || !in_array($lang, $idiomas)){
-      //$lang = 'es';
-      $_REQUEST["lang"] = "es";
-   }
-   $lang = $_REQUEST["lang"];
+   $lang = "es";
+   if(isset($_REQUEST["lang"]))
+      $lang = $_REQUEST["lang"];
 
 // Cargar textos localizados
    require ("$lang/local.php");
