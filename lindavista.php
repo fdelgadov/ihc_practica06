@@ -89,7 +89,7 @@
       or die ("No se puede seleccionar la base de datos");
 
 // Enviar consulta
-   $instruccion = "select * from noticias_$lang order by fecha desc";
+   $instruccion = "select fecha, titulo, texto, imagen from noticias_$lang order by fecha desc";
    $consulta = mysqli_query ($conexion, $instruccion)
        or die ("Fallo en la consulta");
 
